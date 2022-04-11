@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="styleform.css">
+
+</head>
+<body>
+
+    <div class="form_box">
+        <form action="" class="form">
+            <fieldset>
+                <legend><b>Dados Pessoais</b> </legend>
+                <br>
+                
+                <div class="input_box">
+                    <input type="number" name = "code" id="code" class="input_user" required>
+                    <label for="code" class="label">Matrícula </label>
+                    
+                </div> 
+                <br>
+                <br>
+                <div class="input_box">
+                    <input type="text" name = "full_name" id="full_name" class="input_user" required>
+                    <label for="name" class="label">Nome Completo</label>
+                </div>
+                <br>
+                <br>
+                <div class="input_box">
+                   
+                    <input type="password" name = "password" id="password" class="input_user" required>
+                    <label for="password" class="label">Senha</label>
+                </div>                
+                <br>
+                <br>
+                <div class="input_box">
+            
+                    <input type="email" name = "email" id="email" class="input_user" required>
+                    <label for="email" class="label">Email</label>
+                </div>
+
+                <br>
+                <br>
+                <div class="input_box">
+                    
+                    <input type="tel" name = "phone" id="phone" class="input_user" required>
+                    <label for="phone" class="label">Celular</label>
+                </div>
+
+                <br>
+
+                <p>Gênero sexual:</p>
+                <input type="radio" id ="feminino" name="gender" value="feminino" required>
+                <label for="feminino">Feminino</label>
+                <br>
+                <input type="radio" id ="masculino" name="gender" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <br>
+                <input type="radio" id ="other" name="gender" value="other" required>
+                <label for="other">Outro</label>
+
+                <br>
+                <br>
+
+                <div class="input_box">
+
+                    <p><b>Data de nascimento</p>
+                    <input type="date" name = "date" id="date" class="input_user" required>
+                </div>
+
+          
+
+                <div class="input_box">
+
+                    <p>Cartão de Crédito</p>
+
+                    <select name="card" id="select" class="input_user">
+                        <option value="card1">MasterCard</option>
+                        <option value="card2">Visa</option>
+                        <option value="card3">American Express</option>
+                    </select>
+
+                </div>
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend><b>Dados Profissionais</b></legend>
+
+                <div class="input_box">
+                    <p>Cargo</p>
+                    <select name="office_select" id="select" class="input_user">
+                        <option value="Analista_Sênior">Analista Sênior</option>
+                        <option value="Analista_Júnior">Analista Júnior</option>
+                        <option value="Analista_Pleno">Analista Pleno</option>
+                    </select>
+
+                </div>
+
+                <div class="input_box">
+
+                    <p>Informações Pessoais:</p>
+                    <input type="checkbox"> Fumante
+                    <br>
+                    <input type="checkbox"> Pratica Exercícios Físicos
+                    <br>
+                    <input type="checkbox"> Consome Bebida Alcoólica
+             
+                </div>
+
+
+                <div class="input_box">
+
+                    <p>Experiências Profissionais:</p>
+                    <textarea name="professional_experience" id="professional_experience" class="input_user" cols="30" rows="7"></textarea>
+                </div>
+
+                <br>
+                <input type="reset" id="submit" name="submit" value="Limpar">
+                <br>
+                <br>
+                <input type="submit" id="submit" value="Enviar">
+            </fieldset>
+
+
+        </form>
+    </div>
+</body>
+</html>
